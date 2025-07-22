@@ -10,3 +10,7 @@ spring:
         options:
           model: deepseek-chat # 使用哪个模型
           temperature: 0.8 # 温度值
+
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: debug

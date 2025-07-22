@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.868 s -- in com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.978 s -- in com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplicationTests
