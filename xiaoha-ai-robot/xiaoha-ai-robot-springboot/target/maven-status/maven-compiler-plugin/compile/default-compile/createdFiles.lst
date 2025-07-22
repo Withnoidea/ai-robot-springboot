@@ -1,7 +1,11 @@
 com\quanxiaoha\ai\robot\controller\ChatClientController.class
 com\quanxiaoha\ai\robot\config\ChatClientConfig.class
+com\quanxiaoha\ai\robot\controller\ZhiPuController.class
 com\quanxiaoha\ai\robot\XiaohaAiRobotSpringbootApplication.class
 com\quanxiaoha\ai\robot\config\ChatMemoryConfig.class
+com\quanxiaoha\ai\robot\controller\OpenAIController.class
 com\quanxiaoha\ai\robot\controller\DeepSeekChatController.class
+com\quanxiaoha\ai\robot\controller\OllamaController.class
 com\quanxiaoha\ai\robot\advisor\MyLoggerAdvisor.class
+com\quanxiaoha\ai\robot\controller\AliyunBailianController.class
 com\quanxiaoha\ai\robot\controller\DeepSeekR1ChatController.class

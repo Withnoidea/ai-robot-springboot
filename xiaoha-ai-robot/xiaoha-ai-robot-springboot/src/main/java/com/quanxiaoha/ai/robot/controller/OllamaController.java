@@ -46,4 +46,25 @@ public class OllamaController {
         return chatResponse.getResult().getOutput().getText();
     }
 
+    /**
+     * 流式对话
+     * @param message
+     * @return
+     */
+    @GetMapping(value = "/generateStream", produces = "text/html;charset=utf-8")
+    public Flux<String> generateStream(@RequestParam(value = "message", defaultValue = "你是谁？") String message) {
+        // 构建提示词
+        Prompt prompt = new Prompt(new UserMessage(message));
+
+        // 流式响应
+        return this.chatModel.stream(prompt)
+                .mapNotNull(chatResponse -> {
+                    // 获取响应内容
+                    String text = chatResponse.getResult().getOutput().getText();
+
+                    // 处理换行
+                    return StringUtils.isNotBlank(text) ? text.replace("\n", "<br>") : text;
+                });
+    }
+
 }

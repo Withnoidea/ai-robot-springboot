@@ -21,4 +21,31 @@
 
 ### 本地安装Ollma 并运行Qwen3模型
 
+```shell
+ollama run qwen3:14b
+```
+
 ![image-20250722141618143](https://cdn.jsdelivr.net/gh/Withnoidea/images/image-20250722141618143.png)
+
+### Spring AI整合Ollama实现聊天功能
+
+### 接入智谱AI
+
+### 接入OpenAI
+
+### 接入阿里云百炼大模型平台
+
+## V2.0.0
+
+### 前端创建
+
+### 整合Ant Design Vue组件库
+
+### 整合vue-router
+
+### 聊天界面基础布局
+
+![efedcc5d1e57039b7090b62c7661209](https://cdn.jsdelivr.net/gh/Withnoidea/images/efedcc5d1e57039b7090b62c7661209.png)
+
+
+

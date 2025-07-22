@@ -12,10 +12,31 @@ spring:
           temperature: 0.8 # 温度值
     ollama:
       base-url: http://localhost:11434 # Ollama 服务的访问地址, 11434 端口是 Ollama 默认的启动端口
+      chat:
+        options: # 模型参数
+          model: qwen3:14b # 指定 Ollama 使用的大模型名称，根据你实际安装的来，我运行的是 14b
+          temperature: 0.7 # 温度值
+    zhipuai:
+      base-url: https://open.bigmodel.cn/api/paas # 智谱 AI 的请求 URL, 可不填，默认值为 open.bigmodel.cn/api/paas
+      api-key: 1af2841f14b14535b9731fdd81ccfc58.RnnRYjoggCx8F1KG # 填写智谱 AI 的 API Key, 该成你自己的
+      chat:
+        options: # 模型参数
+          model: glm-4-air # 模型名称，使用智谱 AI 哪个模型
+          temperature: 0.7 # 温度值
+#    openai:
+#      base-url: https://api.zhizengzeng.com/v1 # OpenAI 服务的访问地址，这里使用的第三方代理商：智增增
+#      api-key: sk-zk2d6124e5001aa5fc364d6fcf86cafa44b687f8497d01bd  # 填写智增增的 API Key, 该成你自己的
 #      chat:
-#        options: # 模型参数
-#          model: qwen3:14b # 指定 Ollama 使用的大模型名称，根据你实际安装的来，我运行的是 14b
+#        options:
+#          model: gpt-4o # 模型名称
 #          temperature: 0.7 # 温度值
+    openai:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode # OpenAI 服务的访问地址，这里使用的是阿里云百炼
+      api-key: sk-c56475eaa3944b94bccd9c6f2f0797fa  # 填写阿里云百炼的 API Key, 该成你自己的
+      chat:
+        options:
+          model: qwen-turbo # 模型名称
+          temperature: 0.7 # 温度值
 
 logging:
   level:
