@@ -16,3 +16,9 @@
 ### ChatMemory 实现聊天记忆功能
 
 ![image-20250722111648659](https://cdn.jsdelivr.net/gh/Withnoidea/images/image-20250722111648659.png)
+
+## V1.3.0
+
+### 本地安装Ollma 并运行Qwen3模型
+
+![image-20250722141618143](https://cdn.jsdelivr.net/gh/Withnoidea/images/image-20250722141618143.png)
