@@ -1,6 +1,7 @@
 E:\develop\ai-robot-springboot\xiaoha-ai-robot\xiaoha-ai-robot-springboot\src\main\java\com\quanxiaoha\ai\robot\advisor\MyLoggerAdvisor.java
 E:\develop\ai-robot-springboot\xiaoha-ai-robot\xiaoha-ai-robot-springboot\src\main\java\com\quanxiaoha\ai\robot\config\ChatClientConfig.java
 E:\develop\ai-robot-springboot\xiaoha-ai-robot\xiaoha-ai-robot-springboot\src\main\java\com\quanxiaoha\ai\robot\config\ChatMemoryConfig.java
+E:\develop\ai-robot-springboot\xiaoha-ai-robot\xiaoha-ai-robot-springboot\src\main\java\com\quanxiaoha\ai\robot\config\CorsConfig.java
 E:\develop\ai-robot-springboot\xiaoha-ai-robot\xiaoha-ai-robot-springboot\src\main\java\com\quanxiaoha\ai\robot\controller\AliyunBailianController.java
 E:\develop\ai-robot-springboot\xiaoha-ai-robot\xiaoha-ai-robot-springboot\src\main\java\com\quanxiaoha\ai\robot\controller\ChatClientController.java
 E:\develop\ai-robot-springboot\xiaoha-ai-robot\xiaoha-ai-robot-springboot\src\main\java\com\quanxiaoha\ai\robot\controller\DeepSeekChatController.java
@@ -8,4 +9,5 @@ E:\develop\ai-robot-springboot\xiaoha-ai-robot\xiaoha-ai-robot-springboot\src\ma
 E:\develop\ai-robot-springboot\xiaoha-ai-robot\xiaoha-ai-robot-springboot\src\main\java\com\quanxiaoha\ai\robot\controller\OllamaController.java
 E:\develop\ai-robot-springboot\xiaoha-ai-robot\xiaoha-ai-robot-springboot\src\main\java\com\quanxiaoha\ai\robot\controller\OpenAIController.java
 E:\develop\ai-robot-springboot\xiaoha-ai-robot\xiaoha-ai-robot-springboot\src\main\java\com\quanxiaoha\ai\robot\controller\ZhiPuController.java
+E:\develop\ai-robot-springboot\xiaoha-ai-robot\xiaoha-ai-robot-springboot\src\main\java\com\quanxiaoha\ai\robot\model\AIResponse.java
 E:\develop\ai-robot-springboot\xiaoha-ai-robot\xiaoha-ai-robot-springboot\src\main\java\com\quanxiaoha\ai\robot\XiaohaAiRobotSpringbootApplication.java
