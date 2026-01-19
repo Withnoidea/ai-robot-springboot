@@ -15,9 +15,18 @@ import reactor.core.publisher.Flux;
 public class DeepSeekChatController {
 
     @Resource
+//    @Autowired
     private DeepSeekChatModel chatModel;
 
-    // 省略...
+    /**
+     * 普通对话
+     * @param message
+     * @return
+     */
+    @GetMapping("/generate")
+    public String generate(@RequestParam(value = "message", defaultValue = "你是谁？") String message){
+        return chatModel.call(message);
+    }
 
     /**
      * 流式对话

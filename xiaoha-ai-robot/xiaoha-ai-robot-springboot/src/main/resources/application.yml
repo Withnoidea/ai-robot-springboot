@@ -1,6 +1,5 @@
 server:
-  port: 8080 # ??????
-
+  port: 8080
 spring:
   ai:
     deepseek:
@@ -8,7 +7,7 @@ spring:
       base-url: https://api.deepseek.com # DeepSeek 的请求 URL, 可不填，默认值为 api.deepseek.com
       chat:
         options:
-          model: deepseek-chat # 使用哪个模型
+          model: deepseek-reasoner # 使用哪个模型deepseek-reasoner DeepSeek-R1, deepseek-chat DeepSeek-V3
           temperature: 0.8 # 温度值
     ollama:
       base-url: http://localhost:11434 # Ollama 服务的访问地址, 11434 端口是 Ollama 默认的启动端口
