@@ -34,13 +34,15 @@ public class OllamaController {
     @GetMapping("/generate")
     public String generate(@RequestParam(value = "message", defaultValue = "你是谁？") String message) {
         // 构建提示词，调用大模型
-        ChatResponse chatResponse = chatModel.call(new Prompt(
-                message,
-                OllamaOptions.builder()
-                        .model("qwen3:14b") // 模型名称
-                        .temperature(0.4) // 温度值
-                        .build()
-        ));
+        ChatResponse chatResponse = chatModel.call(new Prompt(message));
+//        动态设置模型参数
+//        ChatResponse chatResponse = chatModel.call(new Prompt(
+//                message,
+//                OllamaOptions.builder()
+//                        .model("qwen3:1.7b") // 模型名称
+//                        .temperature(0.8) // 温度值
+//                        .build()
+//        ));
 
         // 响应回答内容
         return chatResponse.getResult().getOutput().getText();

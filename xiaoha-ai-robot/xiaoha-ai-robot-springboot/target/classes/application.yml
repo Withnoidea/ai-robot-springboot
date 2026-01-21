@@ -1,20 +1,24 @@
 server:
   port: 8080
 spring:
+  cassandra:
+    contact-points: 127.0.0.1 # Cassandra 集群节点地址（可配置多个，用逗号分隔）
+    port: 9042 # 端口号
+    local-datacenter: datacenter1 # 必须与集群配置的数据中心名称一致（大小写敏感）
   ai:
     deepseek:
       api-key: sk-15a030d883d94782b62887b1d142cb2c
       base-url: https://api.deepseek.com # DeepSeek 的请求 URL, 可不填，默认值为 api.deepseek.com
       chat:
         options:
-          model: deepseek-reasoner # 使用哪个模型deepseek-reasoner DeepSeek-R1, deepseek-chat DeepSeek-V3
+          model: deepseek-chat # 使用哪个模型deepseek-reasoner DeepSeek-R1, deepseek-chat DeepSeek-V3
           temperature: 0.8 # 温度值
     ollama:
       base-url: http://localhost:11434 # Ollama 服务的访问地址, 11434 端口是 Ollama 默认的启动端口
       chat:
         options: # 模型参数
-          model: qwen3:14b # 指定 Ollama 使用的大模型名称，根据你实际安装的来，我运行的是 14b
-          temperature: 0.7 # 温度值
+          model: qwen3:1.7b # 指定 Ollama 使用的大模型名称，根据你实际安装的来，我运行的是 14b
+          temperature: 0.8 # 温度值
     zhipuai:
       base-url: https://open.bigmodel.cn/api/paas # 智谱 AI 的请求 URL, 可不填，默认值为 open.bigmodel.cn/api/paas
       api-key: 1af2841f14b14535b9731fdd81ccfc58.RnnRYjoggCx8F1KG # 填写智谱 AI 的 API Key, 该成你自己的
@@ -36,6 +40,14 @@ spring:
         options:
           model: qwen-turbo # 模型名称
           temperature: 0.7 # 温度值
+    chat:
+      memory:
+        repository:
+          cassandra:
+            keyspace: xiaoha_ai_robot # 指定存储聊天记忆的 Keyspace（类似数据库名）
+            table: t_ai_chat_memory # 表名
+            time-to-live: 1095d # 数据的自动过期时间（1095天 ≈ 3年）
+            initialize-schema: true  # 自动初始化表结构
 
 logging:
   level:

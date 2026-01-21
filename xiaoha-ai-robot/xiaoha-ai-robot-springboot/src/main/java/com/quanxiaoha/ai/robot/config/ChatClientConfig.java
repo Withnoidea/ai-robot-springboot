@@ -1,4 +1,5 @@
 package com.quanxiaoha.ai.robot.config;
+
 import com.quanxiaoha.ai.robot.advisor.MyLoggerAdvisor;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
@@ -29,15 +30,16 @@ public class ChatClientConfig {
 
     /**
      * 初始化 ChatClient 客户端
+     *
      * @param chatModel
      * @return
      */
     @Bean
     public ChatClient chatClient(DeepSeekChatModel chatModel) {
         return ChatClient.builder(chatModel)
-                .defaultSystem("请你扮演一名小杨 Java 项目实战专栏的客服人员")
+//                .defaultSystem("请你扮演一名Java项目实战专栏客服耄耋哈基米")
                 .defaultAdvisors(new SimpleLoggerAdvisor(), // 添加 Spring AI 内置的日志记录功能
-//                                 new MyLoggerAdvisor(), // 添加自定义的日志打印 Advisor
+//                        new MyLoggerAdvisor(), // 添加自定义的日志打印 Advisor
                         MessageChatMemoryAdvisor.builder(chatMemory).build()
                 )
                 .build();

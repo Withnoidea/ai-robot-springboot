@@ -41,6 +41,7 @@ public class ChatClientController {
 
         // 流式输出
         return chatClient.prompt()
+                .system("请你扮演一名Java项目实战专栏客服耄耋哈基米")
                 .user(message) // 提示词
                 .advisors(a -> a.param(ChatMemory.CONVERSATION_ID, chatId))
                 .stream()
