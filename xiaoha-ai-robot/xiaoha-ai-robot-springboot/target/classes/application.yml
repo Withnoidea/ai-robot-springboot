@@ -38,7 +38,7 @@ spring:
       api-key: sk-c56475eaa3944b94bccd9c6f2f0797fa  # 填写阿里云百炼的 API Key, 该成你自己的
       chat:
         options:
-          model: qwen-turbo # 模型名称
+          model: qwen-omni-turbo # 模型名称 qwen-turbo qwen-omni-turbo
           temperature: 0.7 # 温度值
     chat:
       memory:
