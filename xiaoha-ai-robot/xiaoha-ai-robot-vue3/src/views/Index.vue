@@ -143,8 +143,13 @@ const sendMessage = async () => {
     //   `http://localhost:8080/v7/ai/generateStream2?message=${encodeURIComponent(userMessage)}&lang=Java`,
     // );
     // 建立 SSE 连接
+    // eventSource = new EventSource(
+    //   `http://localhost:8080/v7/ai/generateStream3?message=${encodeURIComponent(userMessage)}&lang=Java`,
+    // );
+
+    // 建立 SSE 连接
     eventSource = new EventSource(
-      `http://localhost:8080/v7/ai/generateStream3?message=${encodeURIComponent(userMessage)}&lang=Java`,
+      `http://localhost:8080/mcp/ai/generateStream?message=${encodeURIComponent(userMessage)}&chatId=5`,
     );
 
     // 响应的回答

@@ -13,6 +13,18 @@ spring:
         options:
           model: deepseek-chat # 使用哪个模型deepseek-reasoner DeepSeek-R1, deepseek-chat DeepSeek-V3
           temperature: 0.8 # 温度值
+    mcp:
+      client:
+        type: sync # 客户端使用同步通信模式
+        request-timeout: 20s # 设置单次请求超时时间
+        stdio:
+          servers-configuration: classpath:/mcp-servers-config.json # 指定 MCP 服务的配置文件路径
+        toolcallback:
+          enabled: true # 开启 MCP 客户端的工具回调（Tool Callback）功能
+        sse: # SSE (Server-Sent Events) 流式响应配置
+          connections: # 定义 SSE 连接端点
+            qq-mcp-server: # 自定义连接名称（可任意命名）
+              url: http://localhost:8000 # MCP 服务实际地址
     ollama:
       base-url: http://localhost:11434 # Ollama 服务的访问地址, 11434 端口是 Ollama 默认的启动端口
       chat:

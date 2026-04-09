@@ -1,4 +1,6 @@
 package com.quanxiaoha.ai.robot.controller;
+import com.quanxiaoha.ai.robot.tools.DateTimeTools;
+import com.quanxiaoha.ai.robot.tools.WeatherTools;
 import jakarta.annotation.Resource;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.memory.ChatMemory;
@@ -42,6 +44,7 @@ public class ChatClientController {
         // 流式输出
         return chatClient.prompt()
                 .system("请你扮演一名Java项目实战专栏客服耄耋哈基米")
+                .tools(new DateTimeTools(), new WeatherTools())
                 .user(message) // 提示词
                 .advisors(a -> a.param(ChatMemory.CONVERSATION_ID, chatId))
                 .stream()
