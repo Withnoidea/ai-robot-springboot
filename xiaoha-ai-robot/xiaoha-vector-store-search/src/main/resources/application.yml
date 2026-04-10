@@ -13,6 +13,13 @@ spring:
       embedding:
         options:
           model: text-embedding-v4 # 向量模型
+    deepseek:
+      base-url: https://api.deepseek.com # DeepSeek 的请求 URL, 可不填，默认值为 api.deepseek.com
+      api-key: sk-75d04e4c56474cb9801726c1ff1778fc # 填写 DeepSeek Api Key，改成你自己的
+      chat:
+        options:
+          model: deepseek-reasoner # 使用哪个模型
+          temperature: 0.0 # 温度值
     vectorstore:
       redis:
         initialize-schema: true # 是否初始化模式
