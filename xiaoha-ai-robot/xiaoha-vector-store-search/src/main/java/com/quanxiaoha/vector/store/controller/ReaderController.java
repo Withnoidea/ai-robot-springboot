@@ -35,10 +35,16 @@ public class ReaderController {
     @Resource
     private MyPdfReader pdfReader;
 
+    @Resource
+    private MyTikaPptReader tikaPptReader;
+
     @GetMapping(value = "/txt")
     public List<Document> readText() {
         return textReader.loadText();
     }
+
+    @Resource
+    private MyTikaWordReader tikaWordReader;
 
 
 
@@ -65,5 +71,15 @@ public class ReaderController {
     @GetMapping(value = "/pdf")
     public List<Document> readPdf() {
         return pdfReader.getDocsFromPdf();
+    }
+
+    @GetMapping(value = "/word")
+    public List<Document> readWord() {
+        return tikaWordReader.loadWord();
+    }
+
+    @GetMapping(value = "/ppt")
+    public List<Document> readPpt() {
+        return tikaPptReader.loadPpt();
     }
 }
