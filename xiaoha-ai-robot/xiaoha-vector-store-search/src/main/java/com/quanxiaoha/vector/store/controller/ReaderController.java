@@ -1,7 +1,6 @@
 package com.quanxiaoha.vector.store.controller;
 
-import com.quanxiaoha.vector.store.reader.MyJsonReader;
-import com.quanxiaoha.vector.store.reader.MyTextReader;
+import com.quanxiaoha.vector.store.reader.*;
 import jakarta.annotation.Resource;
 import org.springframework.ai.document.Document;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,13 +23,24 @@ public class ReaderController {
     @Resource
     private MyTextReader textReader;
 
+    @Resource
+    private MyJsonReader jsonReader;
+
+    @Resource
+    private MyMarkdownReader markdownReader;
+
+    @Resource
+    private MyHtmlReader htmlReader;
+
+    @Resource
+    private MyPdfReader pdfReader;
+
     @GetMapping(value = "/txt")
     public List<Document> readText() {
         return textReader.loadText();
     }
 
-    @Resource
-    private MyJsonReader jsonReader;
+
 
     @GetMapping(value = "/txt2")
     public List<Document> readText2() {
@@ -42,4 +52,18 @@ public class ReaderController {
         return jsonReader.loadJson();
     }
 
+    @GetMapping(value = "/md")
+    public List<Document> readMarkdown() {
+        return markdownReader.loadMarkdown();
+    }
+
+    @GetMapping(value = "/html")
+    public List<Document> readHtml() {
+        return htmlReader.loadHtml();
+    }
+
+    @GetMapping(value = "/pdf")
+    public List<Document> readPdf() {
+        return pdfReader.getDocsFromPdf();
+    }
 }
