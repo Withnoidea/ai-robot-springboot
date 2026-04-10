@@ -19,6 +19,7 @@
         <!-- Spring AI 版本 -->
         <spring-ai.version>1.0.0</spring-ai.version>
         <lombok.version>1.18.30</lombok.version>
+        <okhttp.version>4.12.0</okhttp.version>
     </properties>
 
     <!-- Spring AI 依赖管理   -->
@@ -102,7 +103,12 @@
             <artifactId>spring-ai-advisors-vector-store</artifactId>
         </dependency>
 
-
+        <!-- OKHttp-->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>${okhttp.version}</version>
+        </dependency>
 
 
     </dependencies>
