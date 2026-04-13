@@ -1,7 +1,7 @@
 package com.quanxiaoha.vector.store.config;
 
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.deepseek.DeepSeekChatModel;
+import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -19,7 +19,7 @@ public class ChatClientConfig {
      * @return
      */
     @Bean
-    public ChatClient chatClient(DeepSeekChatModel chatModel) {
+    public ChatClient chatClient(OpenAiChatModel chatModel) {
         return ChatClient.builder(chatModel)
                 .build();
     }

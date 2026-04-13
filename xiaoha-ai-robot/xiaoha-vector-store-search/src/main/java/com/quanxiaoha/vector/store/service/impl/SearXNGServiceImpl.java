@@ -41,11 +41,13 @@ public class SearXNGServiceImpl implements SearXNGService {
     @Override
     public List<SearchResult> search(String query) {
         // 构建 SearXNG API 请求 URL
+        // 构建 SearXNG API 请求 URL
         HttpUrl httpUrl = HttpUrl.parse(searxngUrl).newBuilder()
                 .addQueryParameter("q", query) // 设置搜索关键词
                 .addQueryParameter("format", "json") // 指定返回 JSON 格式
-                .addQueryParameter("engines", "bing,quark,sogou,360search") // 指定聚合的目标搜索引擎（配置本地网络能够访问的通的搜索引擎）
+                .addQueryParameter("engines", "wolframalpha,presearch,seznam,mwmbl,encyclosearch,bpb,mojeek,right dao,wikimini,crowdview,searchmysite,bing,naver,360search") // 指定聚合的目标搜索引擎（配置本地网络能够访问的通的搜索引擎）
                 .build();
+
 
         // 创建 HTTP GET 请求
         Request request = new Request.Builder()

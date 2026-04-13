@@ -20,6 +20,7 @@
         <spring-ai.version>1.0.0</spring-ai.version>
         <lombok.version>1.18.30</lombok.version>
         <okhttp.version>4.12.0</okhttp.version>
+        <jsoup.version>1.17.2</jsoup.version>
     </properties>
 
     <!-- Spring AI 依赖管理   -->
@@ -110,6 +111,12 @@
             <version>${okhttp.version}</version>
         </dependency>
 
+        <!-- Jsoup -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>${jsoup.version}</version>
+        </dependency>
 
     </dependencies>
 
