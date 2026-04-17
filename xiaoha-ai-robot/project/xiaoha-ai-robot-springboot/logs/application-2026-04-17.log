@@ -1,0 +1,168 @@
+2026-04-17 09:06:35.545 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-17 09:06:35.613 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - Starting XiaohaAiRobotSpringbootApplication using Java 21.0.9 with PID 32896 (E:\download\developsources\ai-robot-springboot\xiaoha-ai-robot\project\xiaoha-ai-robot-springboot\target\classes started by win11 in E:\download\developsources\ai-robot-springboot\xiaoha-ai-robot\project\xiaoha-ai-robot-springboot)
+2026-04-17 09:06:35.621 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - The following 1 profile is active: "dev"
+2026-04-17 09:06:38.845 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-17 09:06:38.871 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-17 09:06:38.874 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-17 09:06:38.875 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-04-17 09:06:39.034 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-17 09:06:39.034 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3344 ms
+2026-04-17 09:06:40.702 [main] INFO  com.baomidou.mybatisplus.extension.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50b1f030
+2026-04-17 09:06:41.127 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-17 09:06:41.146 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-17 09:06:41.159 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - Started XiaohaAiRobotSpringbootApplication in 6.237 seconds (process running for 8.682)
+2026-04-17 09:06:46.859 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-17 09:06:46.860 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-17 09:06:46.862 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-17 09:06:47.132 [http-nio-8080-exec-1] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求开始: [流式对话], 入参: {"message":"你用的什么模型","chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","networkSearch":false,"modelName":"deepseek-v3","temperature":0.7}, 请求类: ChatController, 请求方法: chat =================================== 
+2026-04-17 09:06:47.191 [http-nio-8080-exec-1] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求结束: [流式对话], 耗时: 57ms, 出参: {"scanAvailable":true,"prefetch":-1} =================================== 
+2026-04-17 09:06:47.256 [http-nio-8080-exec-1] ERROR com.quanxiaoha.ai.robot.exception.GlobalExceptionHandler - /chat/completion request error, 
+java.lang.IllegalArgumentException: advisorName cannot be null or empty
+	at org.springframework.util.Assert.hasText(Assert.java:253) ~[spring-core-6.2.8.jar:6.2.8]
+	at org.springframework.ai.chat.client.advisor.observation.AdvisorObservationContext.<init>(AdvisorObservationContext.java:45) ~[spring-ai-client-chat-1.0.0.jar:1.0.0]
+	at org.springframework.ai.chat.client.advisor.observation.AdvisorObservationContext$Builder.build(AdvisorObservationContext.java:112) ~[spring-ai-client-chat-1.0.0.jar:1.0.0]
+	at org.springframework.ai.chat.client.advisor.DefaultAroundAdvisorChain.lambda$nextStream$6(DefaultAroundAdvisorChain.java:128) ~[spring-ai-client-chat-1.0.0.jar:1.0.0]
+	at reactor.core.publisher.FluxDeferContextual.subscribe(FluxDeferContextual.java:49) ~[reactor-core-3.7.7.jar:3.7.7]
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68) ~[reactor-core-3.7.7.jar:3.7.7]
+	at reactor.core.publisher.FluxDeferContextual.subscribe(FluxDeferContextual.java:57) ~[reactor-core-3.7.7.jar:3.7.7]
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8891) ~[reactor-core-3.7.7.jar:3.7.7]
+	at org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandler$AbstractEmitterSubscriber.connect(ReactiveTypeHandler.java:283) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandler.handleValue(ReactiveTypeHandler.java:167) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitterReturnValueHandler.handleReturnValue(ResponseBodyEmitterReturnValueHandler.java:210) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.42.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.42.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-04-17 09:07:06.374 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-17 09:07:06.399 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-17 09:08:08.700 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-17 09:08:08.759 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - Starting XiaohaAiRobotSpringbootApplication using Java 21.0.9 with PID 32592 (E:\download\developsources\ai-robot-springboot\xiaoha-ai-robot\project\xiaoha-ai-robot-springboot\target\classes started by win11 in E:\download\developsources\ai-robot-springboot\xiaoha-ai-robot\project\xiaoha-ai-robot-springboot)
+2026-04-17 09:08:08.765 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - The following 1 profile is active: "dev"
+2026-04-17 09:08:11.135 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-17 09:08:11.164 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-17 09:08:11.167 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-17 09:08:11.168 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-04-17 09:08:11.333 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-17 09:08:11.334 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2510 ms
+2026-04-17 09:08:12.842 [main] INFO  com.baomidou.mybatisplus.extension.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@28b576a9
+2026-04-17 09:08:13.157 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-17 09:08:13.174 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-17 09:08:13.186 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - Started XiaohaAiRobotSpringbootApplication in 5.0 seconds (process running for 6.943)
+2026-04-17 09:08:16.405 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-17 09:08:16.406 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-17 09:08:16.408 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-17 09:08:16.717 [http-nio-8080-exec-1] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求开始: [流式对话], 入参: {"message":"你用的什么模型","chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","networkSearch":false,"modelName":"deepseek-v3","temperature":0.7}, 请求类: ChatController, 请求方法: chat =================================== 
+2026-04-17 09:08:16.774 [http-nio-8080-exec-1] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求结束: [流式对话], 耗时: 57ms, 出参: {"scanAvailable":true,"prefetch":-1} =================================== 
+2026-04-17 09:08:18.702 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 
+2026-04-17 09:08:18.703 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 我是
+2026-04-17 09:08:18.763 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk:  **DeepSe
+2026-04-17 09:08:18.840 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: ek Chat
+2026-04-17 09:08:18.984 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: **，由
+2026-04-17 09:08:19.132 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 深度求索（
+2026-04-17 09:08:19.235 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: DeepSeek）公司开发
+2026-04-17 09:08:19.390 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 。目前，我使用的是 **
+2026-04-17 09:08:19.490 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: DeepSeek-V3
+2026-04-17 09:08:19.636 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: ** 模型，这是一个
+2026-04-17 09:08:19.734 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 强大的大语言模型
+2026-04-17 09:08:19.959 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: （LLM），具备
+2026-04-17 09:08:20.039 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 以下特点：  
+
+
+2026-04-17 09:08:20.188 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 🔹 **知识截止
+2026-04-17 09:08:20.288 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 日期**：202
+2026-04-17 09:08:20.434 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 4年7月  
+
+2026-04-17 09:08:20.537 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 🔹 **上下文窗口
+2026-04-17 09:08:20.687 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: **：128K（
+2026-04-17 09:08:20.787 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 支持超长文本理解和
+2026-04-17 09:08:20.942 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 处理）  
+
+2026-04-17 09:08:21.109 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 🔹 **功能**
+2026-04-17 09:08:21.321 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: ：  
+- 文本
+2026-04-17 09:08:21.425 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 生成（写作、翻译
+2026-04-17 09:08:21.576 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 、代码等）  
+-
+2026-04-17 09:08:21.680 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk:  多轮对话  
+
+2026-04-17 09:08:21.901 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: - 文件解析
+2026-04-17 09:08:22.004 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: （支持 txt、pdf
+2026-04-17 09:08:22.163 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 、ppt、word、
+2026-04-17 09:08:22.267 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: excel 等）  
+
+2026-04-17 09:08:22.418 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: - 互联网搜索（
+2026-04-17 09:08:22.528 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 需用户手动开启）
+2026-04-17 09:08:22.687 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk:   
+
+我的模型基于
+2026-04-17 09:08:22.789 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk:  **自研技术
+2026-04-17 09:08:22.927 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: **，在多个
+2026-04-17 09:08:23.070 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk:  NLP 任务上
+2026-04-17 09:08:23.179 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 表现优秀。如果你对
+2026-04-17 09:08:23.337 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 技术细节感兴趣，可以访问
+2026-04-17 09:08:23.467 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk:  [DeepSeek 官网
+2026-04-17 09:08:23.574 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: ](https://www.deepseek
+2026-04-17 09:08:23.738 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: .com) 了解更多
+2026-04-17 09:08:23.843 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: ！  
+
+有什么具体
+2026-04-17 09:08:23.980 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 问题需要我帮忙解答
+2026-04-17 09:08:24.006 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 吗？😊
+2026-04-17 09:08:24.008 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 
+2026-04-17 09:08:24.009 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - 
+==== FULL AI RESPONSE ====
+我是 **DeepSeek Chat**，由深度求索（DeepSeek）公司开发。目前，我使用的是 **DeepSeek-V3** 模型，这是一个强大的大语言模型（LLM），具备以下特点：  
+
+🔹 **知识截止日期**：2024年7月  
+🔹 **上下文窗口**：128K（支持超长文本理解和处理）  
+🔹 **功能**：  
+- 文本生成（写作、翻译、代码等）  
+- 多轮对话  
+- 文件解析（支持 txt、pdf、ppt、word、excel 等）  
+- 互联网搜索（需用户手动开启）  
+
+我的模型基于 **自研技术**，在多个 NLP 任务上表现优秀。如果你对技术细节感兴趣，可以访问 [DeepSeek 官网](https://www.deepseek.com) 了解更多！  
+
+有什么具体问题需要我帮忙解答吗？😊
+========================

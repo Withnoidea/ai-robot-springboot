@@ -1,5 +1,7 @@
 package com.quanxiaoha.ai.robot.controller;
 
+import com.google.common.collect.Lists;
+import com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor;
 import com.quanxiaoha.ai.robot.aspect.ApiOperationLog;
 import com.quanxiaoha.ai.robot.model.vo.chat.AIResponse;
 import com.quanxiaoha.ai.robot.model.vo.chat.AiChatReqVO;
@@ -9,6 +11,7 @@ import com.quanxiaoha.ai.robot.utils.Response;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.client.advisor.api.Advisor;
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.ai.openai.OpenAiChatOptions;
@@ -22,6 +25,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 
+import java.util.List;
 
 
 @RestController
@@ -72,6 +76,15 @@ public class ChatController {
                         .temperature(temperature)
                         .build())
                 .user(userMessage); // 用户提示词
+
+        // Advisor 集合
+        List<Advisor> advisors = Lists.newArrayList();
+        // 添加自定义打印流式对话日志 Advisor
+        advisors.add(new CustomStreamLoggerAdvisor());
+
+        // 应用 Advisor 集合
+        chatClientRequestSpec.advisors(advisors);
+
 
         // 流式输出
         return chatClientRequestSpec
