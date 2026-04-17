@@ -3,12 +3,15 @@ package com.quanxiaoha.ai.robot.controller;
 import com.google.common.collect.Lists;
 import com.quanxiaoha.ai.robot.advisor.CustomChatMemoryAdvisor;
 import com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor;
+import com.quanxiaoha.ai.robot.advisor.NetworkSearchAdvisor;
 import com.quanxiaoha.ai.robot.aspect.ApiOperationLog;
 import com.quanxiaoha.ai.robot.domain.mapper.ChatMessageMapper;
 import com.quanxiaoha.ai.robot.model.vo.chat.AIResponse;
 import com.quanxiaoha.ai.robot.model.vo.chat.AiChatReqVO;
 import com.quanxiaoha.ai.robot.model.vo.chat.NewChatReqVO;
 import com.quanxiaoha.ai.robot.service.ChatService;
+import com.quanxiaoha.ai.robot.service.SearXNGService;
+import com.quanxiaoha.ai.robot.service.SearchResultContentFetcherService;
 import com.quanxiaoha.ai.robot.utils.Response;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -48,6 +51,12 @@ public class ChatController {
     @Resource
     private TransactionTemplate transactionTemplate;
 
+    @Resource
+    private SearXNGService searXNGService;
+    @Resource
+    private SearchResultContentFetcherService searchResultContentFetcherService;
+
+
     @PostMapping("/new")
     @ApiOperationLog(description = "新建对话")
     public Response<?> newChat(@RequestBody @Validated NewChatReqVO newChatReqVO) {
@@ -68,6 +77,10 @@ public class ChatController {
         // 温度值
         Double temperature = aiChatReqVO.getTemperature();
 
+        // 是否开启联网搜索
+        boolean networkSearch = aiChatReqVO.getNetworkSearch();
+
+
         // 构建 ChatModel
         ChatModel chatModel = OpenAiChatModel.builder()
                 .openAiApi(OpenAiApi.builder()
@@ -87,8 +100,14 @@ public class ChatController {
 
         // Advisor 集合
         List<Advisor> advisors = Lists.newArrayList();
-        // 添加自定义对话记忆 Advisor（以最新的 50 条消息作为记忆）
-        advisors.add(new CustomChatMemoryAdvisor(chatMessageMapper, aiChatReqVO, 50));
+
+        // 是否开启了联网搜索
+        if (networkSearch) {
+            advisors.add(new NetworkSearchAdvisor(searXNGService, searchResultContentFetcherService));
+        } else {
+            // 添加自定义对话记忆 Advisor（以最新的 50 条消息作为记忆）
+            advisors.add(new CustomChatMemoryAdvisor(chatMessageMapper, aiChatReqVO, 50));
+        }
         // 添加自定义打印流式对话日志 Advisor
         advisors.add(new CustomStreamLoggerAndMessage2DBAdvisor(chatMessageMapper, aiChatReqVO, transactionTemplate));
 

@@ -23,3 +23,14 @@ spring:
     openai:
       base-url: https://dashscope.aliyuncs.com/compatible-mode # OpenAI 服务的访问地址，这里使用的是阿里云百炼
       api-key: sk-c56475eaa3944b94bccd9c6f2f0797fa  # 填写阿里百炼 API Key, 改成你自己的
+
+okhttp: # OkHttp 客户端配置
+  connect-timeout: 5000    # 建立连接的最大等待时间（毫秒）
+  read-timeout: 30000      # 读取数据的最大等待时间（毫秒）
+  write-timeout: 15000     # 写入数据的最大等待时间（毫秒）
+  max-idle-connections: 200 # 连接池中保持的最大空闲连接数
+  keep-alive-duration: 5   # 空闲连接在连接池中的存活时间（分钟）
+
+searxng: # SearXNG 搜索引擎配置
+  url: http://localhost:8888/search # SearXNG 服务的 API 端点地址
+  count: 10 # 每次从搜索结果中，提取的最大数量
