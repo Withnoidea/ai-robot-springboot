@@ -94,63 +94,63 @@ java.lang.IllegalArgumentException: advisorName cannot be null or empty
 2026-04-17 09:08:16.408 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
 2026-04-17 09:08:16.717 [http-nio-8080-exec-1] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求开始: [流式对话], 入参: {"message":"你用的什么模型","chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","networkSearch":false,"modelName":"deepseek-v3","temperature":0.7}, 请求类: ChatController, 请求方法: chat =================================== 
 2026-04-17 09:08:16.774 [http-nio-8080-exec-1] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求结束: [流式对话], 耗时: 57ms, 出参: {"scanAvailable":true,"prefetch":-1} =================================== 
-2026-04-17 09:08:18.702 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 
-2026-04-17 09:08:18.703 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 我是
-2026-04-17 09:08:18.763 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk:  **DeepSe
-2026-04-17 09:08:18.840 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: ek Chat
-2026-04-17 09:08:18.984 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: **，由
-2026-04-17 09:08:19.132 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 深度求索（
-2026-04-17 09:08:19.235 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: DeepSeek）公司开发
-2026-04-17 09:08:19.390 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 。目前，我使用的是 **
-2026-04-17 09:08:19.490 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: DeepSeek-V3
-2026-04-17 09:08:19.636 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: ** 模型，这是一个
-2026-04-17 09:08:19.734 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 强大的大语言模型
-2026-04-17 09:08:19.959 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: （LLM），具备
-2026-04-17 09:08:20.039 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 以下特点：  
+2026-04-17 09:08:18.702 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:
+2026-04-17 09:08:18.703 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 我是
+2026-04-17 09:08:18.763 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  **DeepSe
+2026-04-17 09:08:18.840 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ek Chat
+2026-04-17 09:08:18.984 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: **，由
+2026-04-17 09:08:19.132 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 深度求索（
+2026-04-17 09:08:19.235 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: DeepSeek）公司开发
+2026-04-17 09:08:19.390 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 。目前，我使用的是 **
+2026-04-17 09:08:19.490 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: DeepSeek-V3
+2026-04-17 09:08:19.636 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ** 模型，这是一个
+2026-04-17 09:08:19.734 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 强大的大语言模型
+2026-04-17 09:08:19.959 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: （LLM），具备
+2026-04-17 09:08:20.039 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 以下特点：
 
 
-2026-04-17 09:08:20.188 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 🔹 **知识截止
-2026-04-17 09:08:20.288 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 日期**：202
-2026-04-17 09:08:20.434 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 4年7月  
+2026-04-17 09:08:20.188 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 🔹 **知识截止
+2026-04-17 09:08:20.288 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 日期**：202
+2026-04-17 09:08:20.434 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 4年7月
 
-2026-04-17 09:08:20.537 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 🔹 **上下文窗口
-2026-04-17 09:08:20.687 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: **：128K（
-2026-04-17 09:08:20.787 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 支持超长文本理解和
-2026-04-17 09:08:20.942 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 处理）  
+2026-04-17 09:08:20.537 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 🔹 **上下文窗口
+2026-04-17 09:08:20.687 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: **：128K（
+2026-04-17 09:08:20.787 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 支持超长文本理解和
+2026-04-17 09:08:20.942 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 处理）
 
-2026-04-17 09:08:21.109 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 🔹 **功能**
-2026-04-17 09:08:21.321 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: ：  
+2026-04-17 09:08:21.109 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 🔹 **功能**
+2026-04-17 09:08:21.321 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ：
 - 文本
-2026-04-17 09:08:21.425 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 生成（写作、翻译
-2026-04-17 09:08:21.576 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 、代码等）  
+2026-04-17 09:08:21.425 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 生成（写作、翻译
+2026-04-17 09:08:21.576 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 、代码等）
 -
-2026-04-17 09:08:21.680 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk:  多轮对话  
+2026-04-17 09:08:21.680 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  多轮对话
 
-2026-04-17 09:08:21.901 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: - 文件解析
-2026-04-17 09:08:22.004 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: （支持 txt、pdf
-2026-04-17 09:08:22.163 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 、ppt、word、
-2026-04-17 09:08:22.267 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: excel 等）  
+2026-04-17 09:08:21.901 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: - 文件解析
+2026-04-17 09:08:22.004 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: （支持 txt、pdf
+2026-04-17 09:08:22.163 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 、ppt、word、
+2026-04-17 09:08:22.267 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: excel 等）
 
-2026-04-17 09:08:22.418 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: - 互联网搜索（
-2026-04-17 09:08:22.528 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 需用户手动开启）
-2026-04-17 09:08:22.687 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk:   
+2026-04-17 09:08:22.418 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: - 互联网搜索（
+2026-04-17 09:08:22.528 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 需用户手动开启）
+2026-04-17 09:08:22.687 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:
 
 我的模型基于
-2026-04-17 09:08:22.789 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk:  **自研技术
-2026-04-17 09:08:22.927 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: **，在多个
-2026-04-17 09:08:23.070 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk:  NLP 任务上
-2026-04-17 09:08:23.179 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 表现优秀。如果你对
-2026-04-17 09:08:23.337 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 技术细节感兴趣，可以访问
-2026-04-17 09:08:23.467 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk:  [DeepSeek 官网
-2026-04-17 09:08:23.574 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: ](https://www.deepseek
-2026-04-17 09:08:23.738 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: .com) 了解更多
-2026-04-17 09:08:23.843 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: ！  
+2026-04-17 09:08:22.789 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  **自研技术
+2026-04-17 09:08:22.927 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: **，在多个
+2026-04-17 09:08:23.070 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  NLP 任务上
+2026-04-17 09:08:23.179 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 表现优秀。如果你对
+2026-04-17 09:08:23.337 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 技术细节感兴趣，可以访问
+2026-04-17 09:08:23.467 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  [DeepSeek 官网
+2026-04-17 09:08:23.574 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ](https://www.deepseek
+2026-04-17 09:08:23.738 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: .com) 了解更多
+2026-04-17 09:08:23.843 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ！
 
 有什么具体
-2026-04-17 09:08:23.980 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 问题需要我帮忙解答
-2026-04-17 09:08:24.006 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 吗？😊
-2026-04-17 09:08:24.008 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - ## chunk: 
-2026-04-17 09:08:24.009 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAdvisor - 
+2026-04-17 09:08:23.980 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 问题需要我帮忙解答
+2026-04-17 09:08:24.006 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 吗？😊
+2026-04-17 09:08:24.008 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:
+2026-04-17 09:08:24.009 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor -
 ==== FULL AI RESPONSE ====
 我是 **DeepSeek Chat**，由深度求索（DeepSeek）公司开发。目前，我使用的是 **DeepSeek-V3** 模型，这是一个强大的大语言模型（LLM），具备以下特点：  
 
@@ -166,3 +166,73 @@ java.lang.IllegalArgumentException: advisorName cannot be null or empty
 
 有什么具体问题需要我帮忙解答吗？😊
 ========================
+2026-04-17 09:13:18.846 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-17 09:13:18.870 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-17 09:29:58.483 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-17 09:29:58.551 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - Starting XiaohaAiRobotSpringbootApplication using Java 21.0.9 with PID 28964 (E:\download\developsources\ai-robot-springboot\xiaoha-ai-robot\project\xiaoha-ai-robot-springboot\target\classes started by win11 in E:\download\developsources\ai-robot-springboot\xiaoha-ai-robot\project\xiaoha-ai-robot-springboot)
+2026-04-17 09:29:58.558 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - The following 1 profile is active: "dev"
+2026-04-17 09:30:01.377 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-17 09:30:01.406 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-17 09:30:01.409 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-17 09:30:01.410 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-04-17 09:30:01.575 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-17 09:30:01.575 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2951 ms
+2026-04-17 09:30:03.455 [main] INFO  com.baomidou.mybatisplus.extension.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@30457e14
+2026-04-17 09:30:03.728 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-17 09:30:03.748 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-17 09:30:03.762 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - Started XiaohaAiRobotSpringbootApplication in 5.938 seconds (process running for 8.16)
+2026-04-17 09:30:08.201 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-17 09:30:08.201 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-17 09:30:08.203 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-17 09:30:08.465 [http-nio-8080-exec-2] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求开始: [流式对话], 入参: {"message":"你用的什么模型","chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","networkSearch":false,"modelName":"deepseek-v3","temperature":0.7}, 请求类: ChatController, 请求方法: chat =================================== 
+2026-04-17 09:30:08.518 [http-nio-8080-exec-2] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求结束: [流式对话], 耗时: 54ms, 出参: {"scanAvailable":true,"prefetch":-1} =================================== 
+2026-04-17 09:30:10.475 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 
+2026-04-17 09:30:10.476 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 我是
+2026-04-17 09:30:10.487 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  **
+2026-04-17 09:30:10.601 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: Deep
+2026-04-17 09:30:10.710 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: Seek-V3**
+2026-04-17 09:30:10.870 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ，由深度求索
+2026-04-17 09:30:10.987 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: （DeepSeek）
+2026-04-17 09:30:11.138 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 公司研发的 **大
+2026-04-17 09:30:11.291 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 语言模型（LLM
+2026-04-17 09:30:11.422 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ）**。我的知识
+2026-04-17 09:30:11.535 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 截止日期是 **202
+2026-04-17 09:30:11.699 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 4年7月**
+2026-04-17 09:30:11.797 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ，具备强大的 **128
+2026-04-17 09:30:11.961 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: K 上下文窗口**
+2026-04-17 09:30:12.099 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ，能够处理复杂的推理
+2026-04-17 09:30:12.238 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 、代码生成、文本
+2026-04-17 09:30:12.436 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 理解和创作等任务。
+2026-04-17 09:30:12.500 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:   
+
+我的基础模型基于
+2026-04-17 09:30:12.626 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  **Transformer 架构**
+2026-04-17 09:30:12.769 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ，并经过大规模预
+2026-04-17 09:30:12.890 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 训练和优化，支持
+2026-04-17 09:30:13.049 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  **中文和英文**
+2026-04-17 09:30:13.163 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  等多种语言的高效
+2026-04-17 09:30:13.305 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 处理。目前，我
+2026-04-17 09:30:13.422 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 仍然是 **免费** 
+2026-04-17 09:30:13.577 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 的！🎉 
+2026-04-17 09:30:13.699 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 你可以随时向我提问，
+2026-04-17 09:30:13.845 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 我会尽力帮助你！  
+
+
+2026-04-17 09:30:13.966 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 如果你对技术细节感兴趣
+2026-04-17 09:30:14.136 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ，可以访问 **[Deep
+2026-04-17 09:30:14.260 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: Seek 官网](
+2026-04-17 09:30:14.377 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: https://www.deepseek
+2026-04-17 09:30:14.504 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: .com/)** 了解更多
+2026-04-17 09:30:14.526 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 信息 😊
+2026-04-17 09:30:14.528 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 
+2026-04-17 09:30:14.529 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - 
+==== FULL AI RESPONSE ====
+我是 **DeepSeek-V3**，由深度求索（DeepSeek）公司研发的 **大语言模型（LLM）**。我的知识截止日期是 **2024年7月**，具备强大的 **128K 上下文窗口**，能够处理复杂的推理、代码生成、文本理解和创作等任务。  
+
+我的基础模型基于 **Transformer 架构**，并经过大规模预训练和优化，支持 **中文和英文** 等多种语言的高效处理。目前，我仍然是 **免费** 的！🎉 你可以随时向我提问，我会尽力帮助你！  
+
+如果你对技术细节感兴趣，可以访问 **[DeepSeek 官网](https://www.deepseek.com/)** 了解更多信息 😊
+========================
+2026-04-17 09:30:14.543 [boundedElastic-1] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Starting...
+2026-04-17 09:30:14.964 [boundedElastic-1] INFO  com.zaxxer.hikari.pool.HikariPool - AI-Robot-HikariCP - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@54e1a4f4
+2026-04-17 09:30:14.967 [boundedElastic-1] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Start completed.
