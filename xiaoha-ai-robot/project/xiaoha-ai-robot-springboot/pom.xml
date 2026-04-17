@@ -27,9 +27,9 @@
         <!-- Mybatis Plus -->
         <mybatis-plus.version>3.5.12</mybatis-plus.version>
         <p6spy.version>3.9.1</p6spy.version>
-
         <okhttp.version>4.12.0</okhttp.version>
         <jsoup.version>1.17.2</jsoup.version>
+        <hutool.version>5.8.39</hutool.version>
     </properties>
 
     <!-- Spring AI 依赖管理   -->
@@ -154,6 +154,19 @@
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
             <version>${jsoup.version}</version>
+        </dependency>
+
+        <!-- 分页插件 -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-jsqlparser</artifactId>
+        </dependency>
+
+        <!-- Hutool -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
         </dependency>
 
     </dependencies>

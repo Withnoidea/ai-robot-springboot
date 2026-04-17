@@ -483,3 +483,98 @@ LPL 2025年第三赛段季后赛于9月7日正式开始，首场比赛为BLG对�
 2026-04-17 09:59:30.025 [boundedElastic-1] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Starting...
 2026-04-17 09:59:30.403 [boundedElastic-1] INFO  com.zaxxer.hikari.pool.HikariPool - AI-Robot-HikariCP - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@359282ac
 2026-04-17 09:59:30.406 [boundedElastic-1] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Start completed.
+2026-04-17 10:13:16.963 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-17 10:13:16.986 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-17 10:13:16.995 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Shutdown initiated...
+2026-04-17 10:13:17.001 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Shutdown completed.
+2026-04-17 13:12:38.638 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-17 13:12:38.709 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - Starting XiaohaAiRobotSpringbootApplication using Java 21.0.9 with PID 23860 (E:\download\developsources\ai-robot-springboot\xiaoha-ai-robot\project\xiaoha-ai-robot-springboot\target\classes started by win11 in E:\download\developsources\ai-robot-springboot\xiaoha-ai-robot\project\xiaoha-ai-robot-springboot)
+2026-04-17 13:12:38.715 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - The following 1 profile is active: "dev"
+2026-04-17 13:12:43.323 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-17 13:12:43.351 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-17 13:12:43.353 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-17 13:12:43.354 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-04-17 13:12:43.538 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-17 13:12:43.540 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4748 ms
+2026-04-17 13:12:45.753 [main] INFO  com.baomidou.mybatisplus.extension.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@70d8de
+2026-04-17 13:12:46.092 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-17 13:12:46.114 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-17 13:12:46.127 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - Started XiaohaAiRobotSpringbootApplication in 8.221 seconds (process running for 11.16)
+2026-04-17 13:13:02.846 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-17 13:13:02.849 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-17 13:13:02.858 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2026-04-17 13:13:03.140 [http-nio-8080-exec-2] ERROR com.quanxiaoha.ai.robot.exception.GlobalExceptionHandler - /chat/message/list request error, 
+org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:236) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:176) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:150) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.42.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.42.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2026-04-17 13:13:34.635 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-17 13:13:34.659 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-17 13:13:41.293 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-17 13:13:41.359 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - Starting XiaohaAiRobotSpringbootApplication using Java 21.0.9 with PID 34324 (E:\download\developsources\ai-robot-springboot\xiaoha-ai-robot\project\xiaoha-ai-robot-springboot\target\classes started by win11 in E:\download\developsources\ai-robot-springboot\xiaoha-ai-robot\project\xiaoha-ai-robot-springboot)
+2026-04-17 13:13:41.366 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - The following 1 profile is active: "dev"
+2026-04-17 13:13:43.977 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-17 13:13:44.000 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-17 13:13:44.003 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-17 13:13:44.003 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-04-17 13:13:44.174 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-17 13:13:44.177 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2749 ms
+2026-04-17 13:13:45.957 [main] INFO  com.baomidou.mybatisplus.extension.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@595f4da5
+2026-04-17 13:13:46.275 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-17 13:13:46.302 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-17 13:13:46.318 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - Started XiaohaAiRobotSpringbootApplication in 5.593 seconds (process running for 8.118)
+2026-04-17 13:14:33.629 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-17 13:14:33.630 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-17 13:14:33.631 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-04-17 13:14:33.950 [http-nio-8080-exec-1] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求开始: [查询对话历史消息], 入参: {"current":1,"size":10,"chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75"}, 请求类: ChatController, 请求方法: findChatMessagePageList =================================== 
+2026-04-17 13:14:34.279 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Starting...
+2026-04-17 13:14:34.789 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - AI-Robot-HikariCP - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@387888e
+2026-04-17 13:14:34.792 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Start completed.
+2026-04-17 13:14:34.997 [http-nio-8080-exec-1] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求结束: [查询对话历史消息], 耗时: 1052ms, 出参: {"success":true,"message":null,"errorCode":null,"data":[{"id":1,"chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","content":"你用的什么模型","role":"user","createTime":"2026-04-17 09:30:14"},{"id":2,"chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","content":"我是 **DeepSeek-V3**，由深度求索（DeepSeek）公司研发的 **大语言模型（LLM）**。我的知识截止日期是 **2024年7月**，具备强大的 **128K 上下文窗口**，能够处理复杂的推理、代码生成、文本理解和创作等任务。  \n\n我的基础模型基于 **Transformer 架构**，并经过大规模预训练和优化，支持 **中文和英文** 等多种语言的高效处理。目前，我仍然是 **免费** 的！🎉 你可以随时向我提问，我会尽力帮助你！  \n\n如果你对技术细节感兴趣，可以访问 **[DeepSeek 官网](https://www.deepseek.com/)** 了解更多信息 😊","role":"assistant","createTime":"2026-04-17 09:30:15"},{"id":3,"chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","content":"1+1等于多少","role":"user","createTime":"2026-04-17 09:35:43"},{"id":4,"chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","content":"1 + 1 等于 **2**。  \n\n这是一个基本的数学加法运算，如果你有其他更复杂的问题，比如数学推理、逻辑题或者实际应用中的计算，也可以随时问我！ 😊","role":"assistant","createTime":"2026-04-17 09:35:43"},{"id":5,"chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","content":"再加2呢","role":"user","createTime":"2026-04-17 09:35:54"},{"id":6,"chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","content":"1 + 1 + 2 等于 **4**。  \n\n如果你继续加下去，比如再加 3：  \n1 + 1 + 2 + 3 = **7**  \n\n数学可以很有趣！需要算更大的数或者更复杂的计算吗？ 😄","role":"assistant","createTime":"2026-04-17 09:35:54"},{"id":7,"chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","content":"LPL 2025年第三赛段季后赛什么是否开始？","role":"user","createTime":"2026-04-17 09:59:30"},{"id":8,"chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","content":"LPL 2025年第三赛段季后赛于9月7日正式开始，首场比赛为BLG对阵JDG，比赛地点为深圳NIP主场。季后赛将持续至9月21日总决赛，随后冒泡赛在9月25日至27日举行 [<a href=\"https://news.qq.com/rain/a/20250902A08L5U00\" target=\"_blank\">来源2</a>] [<a href=\"https://www.ali213.net/news/html/2025-9/960031.html\" target=\"_blank\">来源3</a>]。具体赛程如下：\n\n- **9月7日**：BLG vs JDG（14:00）、IG vs EDG（17:00）  \n- **9月8日**：AL vs WBG（14:00）、TES vs NIP（17:00）  \n- **9月20日**：败者组决赛  \n- **9月21日**：总决赛 [<a href=\"https://gl.ali213.net/html/2025-7/1678163.html\" target=\"_blank\">来源5</a>]。\n\n若需更详细的每日赛程或首发名单，可参考游侠网等赛事专题页面 [<a href=\"https://www.ali213.net/news/html/2025-9/960031.html\" target=\"_blank\">来源3</a>]。","role":"assistant","createTime":"2026-04-17 09:59:30"}],"total":8,"size":10,"current":1,"pages":1} =================================== 

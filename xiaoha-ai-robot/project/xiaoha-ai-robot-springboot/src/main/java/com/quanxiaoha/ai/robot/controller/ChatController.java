@@ -6,12 +6,12 @@ import com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor;
 import com.quanxiaoha.ai.robot.advisor.NetworkSearchAdvisor;
 import com.quanxiaoha.ai.robot.aspect.ApiOperationLog;
 import com.quanxiaoha.ai.robot.domain.mapper.ChatMessageMapper;
-import com.quanxiaoha.ai.robot.model.vo.chat.AIResponse;
-import com.quanxiaoha.ai.robot.model.vo.chat.AiChatReqVO;
-import com.quanxiaoha.ai.robot.model.vo.chat.NewChatReqVO;
+import com.quanxiaoha.ai.robot.model.vo.chat.*;
+import com.quanxiaoha.ai.robot.model.vo.chat.FindChatHistoryMessagePageListRspVO;
 import com.quanxiaoha.ai.robot.service.ChatService;
 import com.quanxiaoha.ai.robot.service.SearXNGService;
 import com.quanxiaoha.ai.robot.service.SearchResultContentFetcherService;
+import com.quanxiaoha.ai.robot.utils.PageResponse;
 import com.quanxiaoha.ai.robot.utils.Response;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -123,5 +123,10 @@ public class ChatController {
 
     }
 
+    @PostMapping("/message/list")
+    @ApiOperationLog(description = "查询对话历史消息")
+    public PageResponse<FindChatHistoryMessagePageListRspVO> findChatMessagePageList(@RequestBody @Validated FindChatHistoryMessagePageListReqVO findChatHistoryMessagePageListReqVO) {
+        return chatService.findChatHistoryMessagePageList(findChatHistoryMessagePageListReqVO);
+    }
 
 }
