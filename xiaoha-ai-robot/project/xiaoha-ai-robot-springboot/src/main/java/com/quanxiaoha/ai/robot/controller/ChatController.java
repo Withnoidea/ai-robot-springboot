@@ -129,4 +129,22 @@ public class ChatController {
         return chatService.findChatHistoryMessagePageList(findChatHistoryMessagePageListReqVO);
     }
 
+    @PostMapping("/list")
+    @ApiOperationLog(description = "查询历史对话")
+    public PageResponse<FindChatHistoryPageListRspVO> findChatHistoryPageList(@RequestBody @Validated FindChatHistoryPageListReqVO findChatHistoryPageListReqVO) {
+        return chatService.findChatHistoryPageList(findChatHistoryPageListReqVO);
+    }
+
+    @PostMapping("/summary/rename")
+    @ApiOperationLog(description = "重命名对话摘要")
+    public Response<?> renameChatSummary(@RequestBody @Validated RenameChatReqVO renameChatReqVO) {
+        return chatService.renameChatSummary(renameChatReqVO);
+    }
+
+    @PostMapping("/delete")
+    @ApiOperationLog(description = "删除对话")
+    public Response<?> deleteChat(@RequestBody @Validated DeleteChatReqVO deleteChatReqVO) {
+        return chatService.deleteChat(deleteChatReqVO);
+    }
+
 }
