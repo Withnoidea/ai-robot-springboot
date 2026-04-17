@@ -236,3 +236,83 @@ java.lang.IllegalArgumentException: advisorName cannot be null or empty
 2026-04-17 09:30:14.543 [boundedElastic-1] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Starting...
 2026-04-17 09:30:14.964 [boundedElastic-1] INFO  com.zaxxer.hikari.pool.HikariPool - AI-Robot-HikariCP - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@54e1a4f4
 2026-04-17 09:30:14.967 [boundedElastic-1] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Start completed.
+2026-04-17 09:32:52.809 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-17 09:32:52.828 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-17 09:32:52.834 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Shutdown initiated...
+2026-04-17 09:32:52.838 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Shutdown completed.
+2026-04-17 09:35:27.607 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-04-17 09:35:27.675 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - Starting XiaohaAiRobotSpringbootApplication using Java 21.0.9 with PID 36456 (E:\download\developsources\ai-robot-springboot\xiaoha-ai-robot\project\xiaoha-ai-robot-springboot\target\classes started by win11 in E:\download\developsources\ai-robot-springboot\xiaoha-ai-robot\project\xiaoha-ai-robot-springboot)
+2026-04-17 09:35:27.685 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - The following 1 profile is active: "dev"
+2026-04-17 09:35:30.045 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-17 09:35:30.071 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-17 09:35:30.074 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-17 09:35:30.074 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2026-04-17 09:35:30.239 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-17 09:35:30.240 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2492 ms
+2026-04-17 09:35:31.727 [main] INFO  com.baomidou.mybatisplus.extension.spring.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@28b576a9
+2026-04-17 09:35:31.991 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-17 09:35:32.010 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-17 09:35:32.024 [main] INFO  com.quanxiaoha.ai.robot.XiaohaAiRobotSpringbootApplication - Started XiaohaAiRobotSpringbootApplication in 5.007 seconds (process running for 6.728)
+2026-04-17 09:35:39.330 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-17 09:35:39.330 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-17 09:35:39.333 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-17 09:35:39.672 [http-nio-8080-exec-2] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求开始: [流式对话], 入参: {"message":"1+1等于多少","chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","networkSearch":false,"modelName":"deepseek-v3","temperature":0.7}, 请求类: ChatController, 请求方法: chat =================================== 
+2026-04-17 09:35:39.734 [http-nio-8080-exec-2] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求结束: [流式对话], 耗时: 60ms, 出参: {"scanAvailable":true,"prefetch":-1} =================================== 
+2026-04-17 09:35:39.777 [http-nio-8080-exec-2] INFO  com.quanxiaoha.ai.robot.advisor.CustomChatMemoryAdvisor - ## 自定义聊天记忆 Advisor...
+2026-04-17 09:35:39.942 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Starting...
+2026-04-17 09:35:40.272 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - AI-Robot-HikariCP - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@a4f6ce7
+2026-04-17 09:35:40.276 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - AI-Robot-HikariCP - Start completed.
+2026-04-17 09:35:42.005 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 
+2026-04-17 09:35:42.006 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 1
+2026-04-17 09:35:42.017 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  +
+2026-04-17 09:35:42.110 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  
+2026-04-17 09:35:42.272 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 1 等于 **2
+2026-04-17 09:35:42.386 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: **。  
+
+这是一个基本的
+2026-04-17 09:35:42.562 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 数学加法运算，如果你
+2026-04-17 09:35:42.666 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 有其他更复杂的问题，
+2026-04-17 09:35:42.821 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 比如数学推理、逻辑
+2026-04-17 09:35:42.935 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 题或者实际应用中的
+2026-04-17 09:35:43.042 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 计算，也可以随时问我
+2026-04-17 09:35:43.065 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ！ 😊
+2026-04-17 09:35:43.067 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 
+2026-04-17 09:35:43.068 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - 
+==== FULL AI RESPONSE ====
+1 + 1 等于 **2**。  
+
+这是一个基本的数学加法运算，如果你有其他更复杂的问题，比如数学推理、逻辑题或者实际应用中的计算，也可以随时问我！ 😊
+========================
+2026-04-17 09:35:51.595 [http-nio-8080-exec-4] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求开始: [流式对话], 入参: {"message":"再加2呢","chatId":"1c17f7cb-9c9c-4c00-a4b5-0877c1ffef75","networkSearch":false,"modelName":"deepseek-v3","temperature":0.7}, 请求类: ChatController, 请求方法: chat =================================== 
+2026-04-17 09:35:51.606 [http-nio-8080-exec-4] INFO  com.quanxiaoha.ai.robot.aspect.ApiOperationLogAspect - ====== 请求结束: [流式对话], 耗时: 11ms, 出参: {"scanAvailable":true,"prefetch":-1} =================================== 
+2026-04-17 09:35:51.606 [http-nio-8080-exec-4] INFO  com.quanxiaoha.ai.robot.advisor.CustomChatMemoryAdvisor - ## 自定义聊天记忆 Advisor...
+2026-04-17 09:35:52.536 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 
+2026-04-17 09:35:52.555 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 1
+2026-04-17 09:35:52.582 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  +
+2026-04-17 09:35:52.722 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  
+2026-04-17 09:35:52.893 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 1 + 2 
+2026-04-17 09:35:53.001 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 等于 **4**。
+2026-04-17 09:35:53.161 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:   
+
+如果你继续加下去
+2026-04-17 09:35:53.266 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ，比如再加 3
+2026-04-17 09:35:53.432 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ：  
+1 + 
+2026-04-17 09:35:53.539 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 1 + 2 +
+2026-04-17 09:35:53.704 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk:  3 = **7
+2026-04-17 09:35:53.870 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: **  
+
+数学可以很有趣
+2026-04-17 09:35:53.969 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ！需要算更大的数
+2026-04-17 09:35:54.054 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 或者更复杂的计算吗
+2026-04-17 09:35:54.079 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: ？ 😄
+2026-04-17 09:35:54.079 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - ## chunk: 
+2026-04-17 09:35:54.079 [boundedElastic-1] INFO  com.quanxiaoha.ai.robot.advisor.CustomStreamLoggerAndMessage2DBAdvisor - 
+==== FULL AI RESPONSE ====
+1 + 1 + 2 等于 **4**。  
+
+如果你继续加下去，比如再加 3：  
+1 + 1 + 2 + 3 = **7**  
+
+数学可以很有趣！需要算更大的数或者更复杂的计算吗？ 😄
+========================
